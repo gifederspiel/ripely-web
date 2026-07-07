@@ -1,29 +1,30 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --clay:    #C4623A;
-  --clay-lt: #E07A56;
-  --cream:   #F7F1E8;
-  --parchm:  #EDE4D5;
-  --sage:    #7A9E7E;
-  --ink:     #2A1F14;
-  --ink-mid: #5C4A38;
-  --ink-lt:  #9C8570;
-  --card:    #FFFCF7;
-  --radius:  12px;
+  /* Ripely design tokens v2.1 — mirrors the app's theme.js */
+  --primary:    #7A9820;
+  --primary-lt: #93B03B;
+  --bg:         #FDFCFA;
+  --bg-muted:   #F6F3EE;
+  --border:     #EBE7E0;
+  --ink:        #1C1B17;
+  --ink-mid:    #55524A;
+  --ink-lt:     #8A857B;
+  --card:       #FFFFFF;
+  --radius:     16px;
 }
 
 html { font-size: 16px; scroll-behavior: smooth; }
 
 body {
-  background: var(--cream);
+  background: var(--bg);
   color: var(--ink);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   line-height: 1.6;
   min-height: 100vh;
 }
 
-a { color: var(--clay); text-decoration: none; }
+a { color: var(--primary); text-decoration: none; }
 a:hover { text-decoration: underline; }
 
 /* ── Nav ──────────────────────────────────────────────── */
@@ -32,8 +33,8 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 1.25rem 2rem;
-  border-bottom: 1px solid var(--parchm);
-  background: var(--cream);
+  border-bottom: 1px solid var(--border);
+  background: var(--bg);
   position: sticky;
   top: 0;
   z-index: 10;
@@ -46,7 +47,7 @@ nav {
   letter-spacing: -0.02em;
 }
 
-.nav-brand span { color: var(--clay); }
+.nav-brand span { color: var(--primary); }
 
 nav ul {
   list-style: none;
@@ -60,7 +61,7 @@ nav ul a {
   font-weight: 500;
 }
 
-nav ul a:hover { color: var(--clay); text-decoration: none; }
+nav ul a:hover { color: var(--primary); text-decoration: none; }
 
 /* ── Hero ─────────────────────────────────────────────── */
 .hero {
@@ -72,7 +73,7 @@ nav ul a:hover { color: var(--clay); text-decoration: none; }
 
 .hero-badge {
   display: inline-block;
-  background: var(--parchm);
+  background: var(--border);
   color: var(--ink-mid);
   font-size: 0.78rem;
   font-weight: 600;
@@ -102,7 +103,7 @@ nav ul a:hover { color: var(--clay); text-decoration: none; }
 
 .hero h1 em {
   font-style: normal;
-  color: var(--clay);
+  color: var(--primary);
 }
 
 .hero p {
@@ -114,7 +115,7 @@ nav ul a:hover { color: var(--clay); text-decoration: none; }
 
 .btn {
   display: inline-block;
-  background: var(--clay);
+  background: var(--primary);
   color: #fff;
   padding: 0.85rem 2rem;
   border-radius: 99px;
@@ -123,16 +124,16 @@ nav ul a:hover { color: var(--clay); text-decoration: none; }
   transition: background 0.15s;
 }
 
-.btn:hover { background: var(--clay-lt); text-decoration: none; }
+.btn:hover { background: var(--primary-lt); text-decoration: none; }
 
 .btn-outline {
   background: transparent;
-  color: var(--clay);
-  border: 1.5px solid var(--clay);
+  color: var(--primary);
+  border: 1.5px solid var(--primary);
   margin-left: 0.75rem;
 }
 
-.btn-outline:hover { background: var(--parchm); }
+.btn-outline:hover { background: var(--border); }
 
 /* ── Features ─────────────────────────────────────────── */
 .features {
@@ -146,7 +147,7 @@ nav ul a:hover { color: var(--clay); text-decoration: none; }
 
 .feature-card {
   background: var(--card);
-  border: 1px solid var(--parchm);
+  border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 1.5rem;
 }
@@ -157,7 +158,7 @@ nav ul a:hover { color: var(--clay); text-decoration: none; }
 
 /* ── Footer ───────────────────────────────────────────── */
 footer {
-  border-top: 1px solid var(--parchm);
+  border-top: 1px solid var(--border);
   padding: 2rem 1.5rem;
   text-align: center;
   font-size: 0.85rem;
@@ -165,7 +166,7 @@ footer {
 }
 
 footer a { color: var(--ink-lt); margin: 0 0.6rem; }
-footer a:hover { color: var(--clay); }
+footer a:hover { color: var(--primary); }
 
 /* ── Legal pages ──────────────────────────────────────── */
 .legal-wrap {
@@ -200,6 +201,6 @@ footer a:hover { color: var(--clay); }
 
 .legal-wrap .section-divider {
   border: none;
-  border-top: 1px solid var(--parchm);
+  border-top: 1px solid var(--border);
   margin: 2.5rem 0;
 }
