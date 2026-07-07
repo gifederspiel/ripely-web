@@ -20,70 +20,75 @@
     <h1>Privacy Policy</h1>
     <p class="updated">Last updated: 7 July 2026</p>
 
-    <p>Ripely ("we", "our", or "us") is committed to protecting your privacy. This policy explains what information we collect, how we use it, and your rights in relation to it.</p>
+    <p>Ripely ("we", "our", or "us") is committed to protecting your privacy. This policy explains what information we collect, how we use it, and your rights in relation to it. It is written to comply with the Swiss Federal Act on Data Protection (FADP) and, where applicable, the EU General Data Protection Regulation (GDPR).</p>
 
     <h2>1. Who we are</h2>
-    <p>Ripely is a mobile application that helps you track your home food inventory, monitor expiry dates, and discover meals to cook. The app is operated by Gian Federspiel.</p>
+    <p>Ripely is a mobile application that helps you track your home food inventory, monitor expiry dates, and discover meals to cook. The app is operated by Gian Federspiel, based in Switzerland, who acts as the data controller for the processing described here.</p>
     <p>If you have any questions about this policy, contact us at: <a href="mailto:gian.federspiel@bluewin.ch">gian.federspiel@bluewin.ch</a></p>
 
     <hr class="section-divider" />
 
     <h2>2. Information we collect</h2>
 
-    <p><strong>Account information.</strong> When you sign up, we collect your email address. If you use Sign in with Apple or Google Sign-In, we receive a unique identifier and, where you permit it, your name and email from those providers.</p>
+    <p><strong>Account information.</strong> When you sign up, we collect your email address. If you use Sign in with Apple or Google Sign-In, we receive a unique identifier and, where you permit it, your name and email from those providers. You may also set a display name (username) in the app.</p>
 
-    <p><strong>Food inventory data.</strong> Items you add to your pantry — including names, quantities, and expiry dates — are stored securely in our database.</p>
+    <p><strong>Food inventory data.</strong> Items you add to your pantry — including names, quantities, emoji, and expiry dates — are stored in our database. Items can be marked as private; private items are only ever visible to you.</p>
 
-    <p><strong>Household data.</strong> If you create or join a household, we store the household name, its members, and shared inventory data.</p>
+    <p><strong>Household data.</strong> If you create or join a household, we store the household name, an invite code, and the household's membership. Other members of your household can see your display name (or, if you have not set one, the name from your sign-in provider or the part of your email address before the @) and your shared — but never your private — inventory items.</p>
 
-    <p><strong>Voice input.</strong> When you use voice to add items, audio is processed on-device using Apple's Speech Recognition framework. We do not receive or store your audio recordings.</p>
+    <p><strong>Recipes and cooking history.</strong> Recipes you save as favourites and meals you log as cooked (including portions and nutritional estimates) are stored with your account.</p>
 
-    <p><strong>Receipt photos.</strong> When you scan a receipt, the photo is sent to an optical character recognition (OCR) service to extract item names. The photo is processed in transit and is <strong>not stored</strong> by us or by the OCR service after processing.</p>
+    <p><strong>Voice input.</strong> When you use voice to add items, audio is processed on-device using Apple's Speech Recognition framework, and the recognised text is also interpreted on your device. We never receive or store your audio; only the resulting pantry items are saved.</p>
 
-    <p><strong>Usage data.</strong> We may collect basic, anonymised information about how you use the app (e.g. features accessed) to improve the product. This data is not linked to your identity.</p>
+    <p><strong>Receipt photos.</strong> When you scan a receipt, the photo is transmitted via our server to Anthropic's Claude API, which extracts the purchased items. The photo is processed in transit only — it is not stored by us, and under our API agreement it is not used to train Anthropic's models.</p>
+
+    <p><strong>No analytics or tracking.</strong> The app contains no analytics SDKs, advertising trackers, or profiling. We do not collect usage statistics.</p>
 
     <hr class="section-divider" />
 
-    <h2>3. How we use your information</h2>
+    <h2>3. How and why we use your information</h2>
     <ul>
-      <li>To provide and operate the Ripely service</li>
-      <li>To generate personalised meal suggestions based on your pantry contents</li>
-      <li>To send expiry notifications you have opted in to receive</li>
-      <li>To enable household sharing between members you have invited</li>
-      <li>To improve the app based on aggregated, anonymised usage patterns</li>
+      <li>To provide and operate the Ripely service (performance of our contract with you)</li>
+      <li>To generate meal suggestions: when you request suggestions, your pantry items' names, quantities, and expiry dates are sent to Anthropic's Claude API (performance of contract)</li>
+      <li>To deliver sign-in codes and account emails to your email address (performance of contract)</li>
+      <li>To enable household sharing between members you have invited (performance of contract)</li>
+      <li>To maintain the security and integrity of the service (legitimate interest)</li>
     </ul>
 
     <hr class="section-divider" />
 
-    <h2>4. Third-party services</h2>
+    <h2>4. Third-party processors</h2>
 
-    <p><strong>Supabase.</strong> We use Supabase to store your account and inventory data securely. Data is encrypted in transit and at rest. Supabase's privacy policy is available at <a href="https://supabase.com/privacy" target="_blank" rel="noopener">supabase.com/privacy</a>.</p>
+    <p><strong>Supabase.</strong> Our database, authentication, and server functions run on Supabase. Data is encrypted in transit and at rest. <a href="https://supabase.com/privacy" target="_blank" rel="noopener">supabase.com/privacy</a></p>
 
-    <p><strong>Anthropic (Claude AI).</strong> Your pantry contents are sent to Anthropic's API to generate meal suggestions. Anthropic processes this data in accordance with their usage policies. Pantry data sent to Anthropic is not used to train their models under our API agreement. Anthropic's privacy policy is available at <a href="https://www.anthropic.com/privacy" target="_blank" rel="noopener">anthropic.com/privacy</a>.</p>
+    <p><strong>Anthropic (Claude AI).</strong> Pantry contents (for meal suggestions) and receipt photos (for item extraction) are processed by Anthropic's API. This data is not used to train their models under our API agreement. <a href="https://www.anthropic.com/privacy" target="_blank" rel="noopener">anthropic.com/privacy</a></p>
+
+    <p><strong>Resend.</strong> Sign-in code and account emails are delivered through Resend, which processes your email address for that purpose. <a href="https://resend.com/legal/privacy-policy" target="_blank" rel="noopener">resend.com/legal/privacy-policy</a></p>
 
     <p><strong>Apple Sign-In / Google Sign-In.</strong> If you use these sign-in methods, the respective provider's privacy policy applies to the authentication step.</p>
 
-    <p><strong>Apple Speech Recognition.</strong> Voice input is processed using Apple's on-device Speech Recognition. Audio does not leave your device.</p>
+    <p><strong>Apple Speech Recognition.</strong> Voice input is processed on-device. Audio does not leave your device.</p>
 
-    <p>We do not sell your personal data to any third party.</p>
+    <p>Some of these providers may process data outside Switzerland and the European Economic Area (in particular in the United States). Where they do, transfers are covered by the safeguards those providers maintain, such as standard contractual clauses. We do not sell your personal data to anyone.</p>
 
     <hr class="section-divider" />
 
-    <h2>5. Data retention</h2>
-    <p>We retain your account and inventory data for as long as your account is active. If you delete your account, your personal data is permanently deleted from our systems within 30 days. Anonymised, aggregated usage data may be retained indefinitely.</p>
+    <h2>5. Data retention and deletion</h2>
+    <p>We retain your account and inventory data for as long as your account is active.</p>
+    <p>You can delete your account at any time directly in the app (Profile → Delete Account). This immediately and permanently deletes your account together with your pantry, household memberships, favourites, and cooking history. Residual copies in encrypted backups are purged within 30 days.</p>
 
     <hr class="section-divider" />
 
     <h2>6. Your rights</h2>
-    <p>Depending on your location, you may have the right to:</p>
+    <p>Under the FADP and, where applicable, the GDPR, you have the right to:</p>
     <ul>
       <li>Access the personal data we hold about you</li>
       <li>Request correction of inaccurate data</li>
       <li>Request deletion of your data ("right to be forgotten")</li>
       <li>Object to or restrict certain processing</li>
-      <li>Export your data in a portable format</li>
+      <li>Receive your data in a portable format</li>
     </ul>
-    <p>To exercise any of these rights, contact us at <a href="mailto:gian.federspiel@bluewin.ch">gian.federspiel@bluewin.ch</a>. We will respond within 30 days.</p>
+    <p>To exercise any of these rights, contact us at <a href="mailto:gian.federspiel@bluewin.ch">gian.federspiel@bluewin.ch</a>. We will respond within 30 days. You also have the right to lodge a complaint with the Swiss Federal Data Protection and Information Commissioner (FDPIC) or, if you are in the EU/EEA, with your local supervisory authority.</p>
 
     <hr class="section-divider" />
 
